@@ -1,4 +1,4 @@
-# TUP - UTN - Laboratorio de computación 3 - Práctica
+# IZO - Curso React - Práctica
 
 Leer el enunciado de cada práctica en cada carpeta y resolverlo adecuamente de forma que se cumplan test.
 
@@ -15,9 +15,9 @@ Leer el enunciado de cada práctica en cada carpeta y resolverlo adecuamente de 
 
 ## Información
 
-Fecha de creación: 2022
+Fecha de creación: 2023
 Revisión 2023
 
-Profesores: Pablo Botta - Gabriel Golzman
+Profesores: Pablo Botta
 
 Práctica sobre React utilizando git
