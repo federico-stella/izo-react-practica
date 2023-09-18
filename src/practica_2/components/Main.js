@@ -1,3 +1,4 @@
+import BlogPost from "./BlogPost";
 import Body from "./Body";
 
 export default function Main ({ pageBody, links }) {
@@ -12,8 +13,14 @@ export default function Main ({ pageBody, links }) {
                     ))}
                 </ul>
             </nav>
-            <Body pageBody={pageBody} />
+            <div className="main-body">
+                <Body body={pageBody} />
+            </div>
             <p>Frase a elección</p>
+            <BlogPost 
+                title={'Newells: Heinze le dio un fuerte respaldo a Guillermo Ortiz y encendió la polémica'}
+                body={'El DT dijo que "es uno de los mejores centrales del fútbol argentino" con el afán de bancarlo y, quizás, centrar las críticas en su figura'}
+            />
         </main>
     )
 }
