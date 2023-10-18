@@ -1,16 +1,19 @@
 
 import './App.css';
 import Menu from './Menu';
-import { useState } from 'react';
 import MainContent from './MainContent';
+import { useContext, useEffect } from 'react';
+import { MenuContext } from './context/menuContext';
 
 function App() {
-  const [practiceSelected, setPracticeSelected] = useState('#practica_1');
-  // JSX
+  const {practiceSelected} = useContext(MenuContext)
+  useEffect(() => {
+    document.title = practiceSelected
+  },[practiceSelected])
   return (
-    <div>
-      <Menu onOptionSelected={(t) => { setPracticeSelected(t) }} />
-      <MainContent practiceSelected={practiceSelected} />
+    <div className='pagina'>
+      <Menu/>
+      <MainContent />
     </div>
   );
 }

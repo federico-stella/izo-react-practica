@@ -1,26 +1,29 @@
 import BlogPost from "./BlogPost";
 import Body from "./Body";
 
-export default function Main ({ pageBody, links }) {
-    return (
+export default function Main ({pageBody, links}){
+    return(
         <main>
             <nav>
                 <ul>
-                    { links.map((link) => (
-                        <li>
-                            <a href="{ link }">{ link }</a>
+                    { links.map((link)=> (
+                        <li key={link}>
+                            <a href={link} target="_blank">{ link }</a>
                         </li>
-                    ))}
+                    ))}     
                 </ul>
             </nav>
-            <div className="main-body">
-                <Body body={pageBody} />
+            <div className="mainBody">
+                <Body body={pageBody}/>
             </div>
-            <p>Frase a elección</p>
-            <BlogPost 
-                title={'Newells: Heinze le dio un fuerte respaldo a Guillermo Ortiz y encendió la polémica'}
-                body={'El DT dijo que "es uno de los mejores centrales del fútbol argentino" con el afán de bancarlo y, quizás, centrar las críticas en su figura'}
-            />
+            <p className="frase">Ejercicio de la practica número 2</p>
+            <hr></hr>
+            <div className="noticia">
+                <BlogPost
+                    title={'Argentina campeón del Mundial de Qatar 2022'} 
+                    body={'La Albiceleste de Lionel Messi consiguió la gloria máxima tras el triunfo por penales ante Francia en el Lusail Stadium, luego de igualar 3-3 en los 120 minutos. Jugó un enorme partido hasta el descuento de Mbappé y no mereció sufrir. El haberse impuesto en la mejor final de la historia no hizo más que inyectarle épica a una conquista trabajada, sufrida, pero cargada de mística... Y muy buen fútbol. Se trata de la tercera estrella para la Selección y la primera en el torneo para el astro rosarino que, a los 35 años, logró su gran sueño, como Maradona en 1986.'}>
+                </BlogPost>
+            </div>
         </main>
     )
 }

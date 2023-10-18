@@ -1,7 +1,7 @@
-export default function Page ({ children }) {
-    return (
+export default function Page ({children}){
+    return(
         <div>
-            { children }
+            {children}
         </div>
     )
 }

@@ -1,0 +1,71 @@
+.container{
+    background-color: #CECFC9 ;
+    width: 20rem;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.title{
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.input{
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btnAgregar{
+    display: inline-block;
+    margin-top: 5px;
+    background-color: #588178;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: white;
+}
+
+.btnEliminarLista{
+    margin-top: 5px;
+    background-color: #a02a16;
+    border-radius: 5px;
+    color: white;
+}
+
+.btnBorrar{
+    background-color: #a02a16;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+}
+
+.btnEditar{
+    display: inline-block;
+    background-color: #4687a5;
+    border-radius: 5px;
+    color: white;
+}
+
+.lista{
+    border: solid black 2px;
+    text-align: left;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+  
+.contBtn {
+    display: flex;
+    gap: 10px;
+}
+
+.btnAgregar, .btnBorrar, .btnEditar, .btnEliminarLista{
+    cursor: pointer;
+}
+

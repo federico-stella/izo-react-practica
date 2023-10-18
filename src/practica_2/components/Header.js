@@ -1,8 +1,9 @@
 import Title from "./Title";
 
-export default function Header ({ pageTitle }) {
+export default function Header({pageTitle}){
     return (
-        <div className="page-header"><Title title={pageTitle} /></div>
+        <div className="pageHeader">
+            <Title title={pageTitle}></Title>
+        </div>
     )
-    
 }

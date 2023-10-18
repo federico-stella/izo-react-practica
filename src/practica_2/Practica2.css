@@ -1,0 +1,28 @@
+.contenedor{
+    width:25rem;
+    background-color: #CECFC9 ;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    color: black;
+}
+.frase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticia{
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color: #276E90;
+}
+
+a:hover{
+    color: black;
+  }
+  
